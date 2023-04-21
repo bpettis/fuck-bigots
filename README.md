@@ -1,4 +1,44 @@
-# Tool for submitting data to the Missouri Attorney General Transgender Center Concerns Form
+***UPDATE:*** Looks like the form on the MO website has been taken down. The site currently just shows "The specified form no longer exists or is currently unpublished." What a _huge_ bummer
+
+# Fuck Bigots
+
+This is a forked version of a python script (https://github.com/boiled-water-tsar/eat-my-entire-trans-ass-andrew-bailey) that will automatically send data to the Attorney General of Missouri.
+
+I'm going to make a simple Docker image so that others could easily run and deploy this script in various environments
+
+## Installation
+
+Build the Docker image:
+
+```
+docker build -t fuck-bigots .
+```
+
+## Usage
+
+Run the container in detached mode
+
+```
+docker run -d --rm fuck-bigots
+```
+
+## VPN Setup
+
+Probably a good idea to run this behind a VPN just to make sure that your _actual_ IP address isn't inadvertently logged anywhere.
+
+In the longer-term, I'd like to also set up a VPN container image so that the `fuck-bigots` container will run attached to its own Docker network that is behind a VPN. But that's a project for later.
+
+For now, just make sure to exercise good Internet safety and privacy.
+
+![Good luck I'm behind 7 proxies](https://i.kym-cdn.com/entries/icons/original/000/001/461/Good_Luck_I_m_Behind_7_Proxies.jpg)
+
+---
+
+
+# README from the original repository boiled-water-tsar/eat-my-entire-trans-ass-andrew-bailey
+
+
+## Tool for submitting data to the Missouri Attorney General Transgender Center Concerns Form
 
 Url: https://ago.mo.gov/file-a-complaint/transgender-center-concerns
 
@@ -6,7 +46,7 @@ If you want to be a helpful citizen and submit some data to Andrew Bailey, insta
 
 The `time.sleep()` is set conservatively, but play with it maybe there's no rate limiting.
 
-## Installation guide
+### Installation guide
 
 First install python and pip:[https://www.python.org/downloads/](https://www.python.org/downloads/)
 
