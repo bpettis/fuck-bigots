@@ -1,3 +1,5 @@
+***UPDATE:*** Looks like the form on the MO website has been taken down. The site currently just shows "The specified form no longer exists or is currently unpublished." What a _huge_ bummer
+
 # Fuck Bigots
 
 This is a forked version of a python script (https://github.com/boiled-water-tsar/eat-my-entire-trans-ass-andrew-bailey) that will automatically send data to the Attorney General of Missouri.
